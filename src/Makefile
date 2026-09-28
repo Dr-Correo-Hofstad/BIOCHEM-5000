@@ -36,3 +36,11 @@ voxelize-mesh: render-assembly
 	@echo "[*] RUNNING STL VOLUMETRIC TRANSFORMATION COMPILER"
 	@echo "===================================================================="
 	@$(PYTHON) tools/stl_to_voxel.py
+
+# Kinematic and gaze telemetry test loop hook
+test-kinematic-telemetry: check-env
+	@echo "===================================================================="
+	@echo "[*] RUNNING EXTREMITY KINEMATICS AND GAZE VECTOR PREDICTOR"
+	@echo "===================================================================="
+	@$(PYTHON) src/telemetry/joint_vector_predictor.py
+	@$(PYTHON) src/telemetry/pilot_gaze_tracker.py
