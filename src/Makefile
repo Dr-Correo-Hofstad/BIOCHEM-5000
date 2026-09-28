@@ -29,3 +29,10 @@ test-olfactory-intake: check-env
 	@echo "[*] LAUNCHING OLFACTORY SPECTROMETER DOCKING SIMULATION"
 	@echo "===================================================================="
 	@$(PYTHON) src/olfactory_docking_sim.py
+
+# Voxel array serialization compilation hook
+voxelize-mesh: render-assembly
+	@echo "===================================================================="
+	@echo "[*] RUNNING STL VOLUMETRIC TRANSFORMATION COMPILER"
+	@echo "===================================================================="
+	@$(PYTHON) tools/stl_to_voxel.py
