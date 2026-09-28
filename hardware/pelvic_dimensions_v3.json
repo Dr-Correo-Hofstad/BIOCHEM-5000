@@ -1,0 +1,31 @@
+{
+  "parameter_set": "Standard_Adult_Baseline",
+  "pelvic_ring": {
+    "diam_x": 135.0,
+    "diam_y": 115.0,
+    "wall_height": 50.0
+  },
+  "organ_offsets": {
+    "bladder_radius": 24.0,
+    "reproductive_height": 35.0,
+    "rectal_radius": 16.0
+  },
+  "olfactory_intake_telemetry": {
+    "sensor_nodes_count": 16,
+    "baseline_airflow_rate_lmin": 6.5,
+    "critical_toxicity_voltage_threshold_mv": 120.0,
+    "last_measured_signal_mv": 45.0
+  },
+  "chassis_fastener_matrix": {
+    "screw_type": "M4_Rigid_Steel",
+    "clearance_radius_mm": 2.2,
+    "grid_pitch_x_mm": 25.0,
+    "grid_pitch_y_mm": 20.0
+  },
+  "vestibulo_kinematic_telemetry": {
+    "extremity_sensors_count": 10,
+    "polling_frequency_hz": 30.0,
+    "gaze_camera_iso_lux": 450.0,
+    "expected_fluid_viscosity_pas": 0.0035
+  }
+}
